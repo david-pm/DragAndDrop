@@ -1,4 +1,4 @@
-# DragAndDrop
+# Drag 'n Drop
 
 Drag and Drop with HTML5 Starter!
 
