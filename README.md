@@ -9,3 +9,4 @@ To use:
 3. Add as many as you want to the unordered list
 4. Lastly, pass the image wrapper & drop area into the module
 
+[Demo](http://dragndrop.apphb.com/)
