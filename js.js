@@ -1,4 +1,4 @@
-(function(){
+var DrapNDrop = (function(){
 
 	function allowDrop(ev) {
 		if (ev.target === ev.currentTarget) { 
@@ -25,14 +25,17 @@
 		ev.stopPropagation();
 	}
 
-	// elems
-	var imgList = document.getElementById('imgList'),
-		draggableImgs = document.querySelectorAll('img[data-draggable=true]'),
-		dropZone = document.querySelector('#div1');
-		
-	// event handlers
-	imgList.addEventListener('dragstart', drag, false);
-	dropZone.addEventListener('dragover', allowDrop, false);
-	dropZone.addEventListener('drop', drop, false);
+	function init(imgWrap, dropArea) {
+		// event handlers
+		imgWrap.addEventListener('dragstart', drag, false);
+		dropArea.addEventListener('dragover', allowDrop, false);
+		dropArea.addEventListener('drop', drop, false);
 
+	}
+
+	var events = {
+		init: init
+	};
+
+	return events;
 })(); // iife

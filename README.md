@@ -1,5 +1,11 @@
 # DragAndDrop
 
-Drag and Drop with HTML5
+Drag and Drop with HTML5 Starter!
 
-Clone the repos, get some images and you're up and running.
+To use:
+
+1. Clone the repos
+2. Grab some images
+3. Add as many as you want to the unordered list
+4. Lastly, pass the image wrapper & drop area into the module
+

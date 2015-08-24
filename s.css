@@ -1,15 +1,15 @@
 html, 
 body {
-	font: 14px/1 monospace;
+	font: small-caps 16px/1 monospace;
 	background-color: #333;
-	color: mistyrose;
+	color: #ffe;
 }
 .container {
 	max-width: 450px;
 	margin: auto;
 }
 .dropzone { 
-	border:1px solid #aaaaaa; 
+	border: 2px solid #000; 
 	width: 100%;
 	height: 100%;
 }
@@ -22,17 +22,22 @@ body {
 	margin: 2.5px;
 	width: 100px;
 	height: auto;
+	border: 1px solid #ffe;
 }
 #imgList {
 	padding: 0;
 	list-style: none;
 	text-align: center;
 }
-li {
+#imgList li {
 	display: inline-block;
 }
+#imgList img { 
+	border: 1px solid #000;
+}
 h4 { 
+	color: #ffe;
 	text-align: center;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid #000;
 	padding-bottom: 8px;
 }

@@ -10,29 +10,26 @@
 <body>
 	<div class="container">
 		<p>Drag the picture into the box:</p>
-
 		<div class="dropzone">
 			<header>
 				<h4>Drop Zone</h4>
 			</header>
-			<div id="div1">
-				<!-- drop here -->
-			</div>
+			<div id="div1"> <!-- drop here --> </div>
 		</div>
 		<br>
 	</div>
 	<ul id="imgList">
-			<li>
-				<img id="drag1" src="002.jpg" data-draggable="true" width="225" height="225" />
-			</li>
-			<li>
-				<img id="drag2" src="003.jpg" data-draggable="true" width="225" height="225" />
-			</li>
-		</ul>
+		<li><img id="drag1" src="002.jpg" data-draggable="true" width="225" height="225" /></li>
+		<li><img id="drag2" src="003.jpg" data-draggable="true" width="225" height="225" /></li>
+	</ul>
 
 <script src="js.js"></script>
 <script>
-	
+	//  grab elems -- image wrapper and drop area
+	var imgList = document.getElementById('imgList'),
+		dropZone = document.querySelector('#div1');
+	// pass them to the module
+	DrapNDrop.init(imgList, dropZone);
 </script>
 </body>
 </html>
